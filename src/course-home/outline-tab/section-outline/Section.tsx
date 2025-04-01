@@ -54,7 +54,7 @@ const Section: React.FC<Props> = ({
   return (
     <li>
       <Collapsible
-        className="mb-2"
+        className="mb-2 border-0"
         styling="card-lg"
         title={<SectionTitle {...{ complete, hideFromTOC, title }} />}
         open={open}

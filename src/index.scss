@@ -20,7 +20,7 @@ $font-family-lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  
+
   main {
     flex-grow: 1;
   }
@@ -85,7 +85,8 @@ $font-family-lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 .sequence {
   @media (min-width: map-get($grid-breakpoints, "sm")) {
-    border: solid 1px #eaeaea;
+    //border: solid 1px #eaeaea;
+    border: none;
     border-radius: 4px;
   }
 }
@@ -225,7 +226,7 @@ $font-family-lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
       &.active {
         .unit-icon {
-          color: $primary-500;
+          color: #228B22;
         }
 
         &:after {
@@ -425,9 +426,13 @@ $font-family-lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   box-shadow: 0 .0625rem .125rem rgba(0, 0, 0, .2) !important;
 }
 
+.has-visited-course {
+  background-color: #E9F3E9 !important;
+}
+
 .icon-hover {
   &:hover {
-    color: $primary-500 !important;
+    color: #228B22 !important;
     background-color: $light-300 !important;
   }
 }
@@ -455,12 +460,12 @@ $font-family-lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   .course-outline-tab .pgn__card {
     .pgn__card-header {
       display: block;
-  
+
       .pgn__card-header-content {
         margin-top: 0;
       }
     }
-    
+
     .pgn__card-header-actions {
       margin-left: 0;
     }

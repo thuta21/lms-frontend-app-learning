@@ -46,14 +46,19 @@ const NextButton = ({
 
   if (isAtTop) {
     return (
-      <IconButton
-        className={`${buttonStyle} icon-hover`}
+    // <IconButton
+    //   className={`${buttonStyle} icon-hover`}
+    //   onClick={onClick}
+    //   src={nextArrow}
+    //   disabled={disabled}
+    //   iconAs={Icon}
+    //   alt={buttonText}
+    // />
+      <Button
+        variant="outline-success"
         onClick={onClick}
-        src={nextArrow}
-        disabled={disabled}
-        iconAs={Icon}
-        alt={buttonText}
-      />
+      >Next
+      </Button>
     );
   }
 

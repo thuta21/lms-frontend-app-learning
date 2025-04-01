@@ -41,7 +41,7 @@ const StartOrResumeCourseCard = ({ intl }) => {
   };
 
   return (
-    <Card className="mb-3 raised-card" data-testid="start-resume-card">
+    <Card className={`mb-3 raised-card${hasVisitedCourse ? ' has-visited-course' : ''}`} data-testid="start-resume-card">
       <Card.Header
         title={hasVisitedCourse ? intl.formatMessage(messages.resumeBlurb) : intl.formatMessage(messages.startBlurb)}
         actions={(
@@ -50,6 +50,7 @@ const StartOrResumeCourseCard = ({ intl }) => {
             block
             href={resumeCourseUrl}
             onClick={() => logResumeCourseClick()}
+            className='mt-2'
           >
             {hasVisitedCourse ? intl.formatMessage(messages.resume) : intl.formatMessage(messages.start)}
           </Button>

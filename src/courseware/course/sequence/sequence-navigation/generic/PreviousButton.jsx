@@ -39,14 +39,20 @@ const PreviousButton = ({
 
   if (isAtTop) {
     return (
-      <IconButton
-        className={`${buttonStyle} icon-hover`}
+    // <IconButton
+    //   className={`${buttonStyle} icon-hover`}
+    //   onClick={onClickHandler}
+    //   src={prevArrow}
+    //   disabled={disabled}
+    //   iconAs={Icon}
+    //   alt={buttonLabel}
+    // />
+      <Button
+        className="mx-5"
+        variant="outline-success"
         onClick={onClickHandler}
-        src={prevArrow}
-        disabled={disabled}
-        iconAs={Icon}
-        alt={buttonLabel}
-      />
+      >Previous
+      </Button>
     );
   }
 
