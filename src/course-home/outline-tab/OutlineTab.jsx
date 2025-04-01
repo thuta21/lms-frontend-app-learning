@@ -12,7 +12,7 @@ import CourseDates from './widgets/CourseDates';
 import CourseHandouts from './widgets/CourseHandouts';
 import StartOrResumeCourseCard from './widgets/StartOrResumeCourseCard';
 import WeeklyLearningGoalCard from './widgets/WeeklyLearningGoalCard';
-import CourseTools from './widgets/CourseTools';
+// import CourseTools from './widgets/CourseTools';
 import { fetchOutlineTab } from '../data';
 import messages from './messages';
 import ShiftDatesAlert from '../suggested-schedule-messaging/ShiftDatesAlert';
@@ -131,7 +131,7 @@ const OutlineTab = () => {
     <>
       <div data-learner-type={learnerType} className="row w-100 mx-0 my-3 justify-content-between">
         <div className="col-12 col-sm-auto p-0">
-          <div role="heading" aria-level="1" className="h2">{title}</div>
+          <div role="heading" aria-level="1" className="h2 course-title-lms">{title}</div>
         </div>
       </div>
       <div className="row course-outline-tab">
@@ -167,7 +167,7 @@ const OutlineTab = () => {
             <>
               <div id="expand-button-row" className="row w-100 m-0 mb-3 justify-content-end">
                 <div className="col-12 col-md-auto p-0">
-                  <Button ref={expandButtonRef} variant="outline-primary" block onClick={() => { setExpandAll(!expandAll); }}>
+                  <Button ref={expandButtonRef} variant="outline-success" block onClick={() => { setExpandAll(!expandAll); }}>
                     {expandAll ? intl.formatMessage(messages.collapseAll) : intl.formatMessage(messages.expandAll)}
                   </Button>
                 </div>
@@ -191,7 +191,7 @@ const OutlineTab = () => {
                 subscribedToReminders={selectedGoal && 'subscribedToReminders' in selectedGoal ? selectedGoal.subscribedToReminders : false}
               />
             )}
-            <CourseTools />
+            {/* <CourseTools /> */}
             <PluginSlot
               id="outline_tab_notifications_slot"
               pluginProps={{

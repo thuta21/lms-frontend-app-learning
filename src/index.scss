@@ -6,12 +6,21 @@
 @import "~@edx/frontend-component-footer/dist/footer";
 @import "~@edx/frontend-component-header/dist/index";
 
+// Theme fonts
+$font-family-title: 'Montserrat', sans-serif;
+$serif: Montserrat;
+$f-sans-serif: Montserrat, 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Theme Lato fonts
+$font-family-lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
+  
   main {
     flex-grow: 1;
   }
@@ -55,8 +64,8 @@
     &:focus,
     &.active {
       font-weight: $font-weight-normal;
-      color: $primary-500;
-      border-bottom-color: $primary-500;
+      color: #228B22;
+      border-bottom-color: #228B22;
     }
   }
 }
@@ -456,6 +465,10 @@
       margin-left: 0;
     }
   }
+}
+
+.course-title-lms {
+  font-style: $font-family-title
 }
 
 // Import component-specific sass files

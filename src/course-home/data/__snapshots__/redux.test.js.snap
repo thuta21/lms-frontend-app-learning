@@ -67,7 +67,7 @@ exports[`Data layer integration tests Test fetchDatesTab Should fetch, normalize
           },
           {
             "slug": "progress",
-            "title": "Progress",
+            "title": "Progress & Grades",
             "url": "http://localhost:18000/courses/course-v1:edX+DemoX+Demo_Course/progress",
           },
           {
@@ -459,7 +459,7 @@ exports[`Data layer integration tests Test fetchOutlineTab Should fetch, normali
           },
           {
             "slug": "progress",
-            "title": "Progress",
+            "title": "Progress & Grades",
             "url": "http://localhost:18000/courses/course-v1:edX+DemoX+Demo_Course/progress",
           },
           {
@@ -732,7 +732,7 @@ exports[`Data layer integration tests Test fetchProgressTab Should fetch, normal
           },
           {
             "slug": "progress",
-            "title": "Progress",
+            "title": "Progress & Grades",
             "url": "http://localhost:18000/courses/course-v1:edX+DemoX+Demo_Course/progress",
           },
           {
