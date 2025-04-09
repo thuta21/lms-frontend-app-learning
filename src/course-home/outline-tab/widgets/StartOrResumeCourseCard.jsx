@@ -50,7 +50,7 @@ const StartOrResumeCourseCard = ({ intl }) => {
             block
             href={resumeCourseUrl}
             onClick={() => logResumeCourseClick()}
-            className='mt-2'
+            className="mt-2"
           >
             {hasVisitedCourse ? intl.formatMessage(messages.resume) : intl.formatMessage(messages.start)}
           </Button>
@@ -58,7 +58,7 @@ const StartOrResumeCourseCard = ({ intl }) => {
       />
       {/* Footer is needed for internal vertical spacing to work out. If you can remove, be my guest */}
       {/* eslint-disable-next-line react/jsx-no-useless-fragment */}
-      <Card.Footer><></></Card.Footer>
+      <Card.Footer className="pt-1"><></></Card.Footer>
     </Card>
   );
 };

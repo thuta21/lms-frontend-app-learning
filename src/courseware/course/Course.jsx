@@ -107,10 +107,10 @@ const Course = ({
             />
           </>
         )}
-        <div className="w-100 d-flex align-items-center">
+        {/* <div className="w-100 d-flex align-items-center">
           <CourseOutlineMobileSidebarTriggerSlot />
           <NotificationsDiscussionsSidebarTriggerSlot courseId={courseId} />
-        </div>
+        </div> */}
       </div>
 
       <AlertList topic="sequence" />
