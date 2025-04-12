@@ -51,6 +51,10 @@
     }
 }
 
+.collapsible-trigger {
+    background-color: #F1F2F1;
+}
+
 #outline-sidebar-outline {
     margin-top: -1px;
 
@@ -64,10 +68,12 @@
 
         .collapsible-trigger {
             border-radius: 0;
+            background-color: #F1F2F1;
             padding: map-get($spacers, 3\.5) map-get($spacers, 4) map-get($spacers, 3\.5) map-get($spacers, 5);
 
             @media (max-width: -1 + map-get($grid-breakpoints, "sm")) {
                 padding-left: map-get($spacers, 4);
+                background-color: #F1F2F1;
             }
 
             &:hover {
