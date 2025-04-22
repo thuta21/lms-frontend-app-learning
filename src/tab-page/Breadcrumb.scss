@@ -1,0 +1,63 @@
+.breadcrumb {
+  background-color: #f7f8f7;
+  padding: 1rem 1.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  @media (max-width: 786px) {
+    padding-left: 35px;
+  }
+
+  @media (min-width: 786px) {
+    padding-left: 90px;
+  }
+
+  ul {
+	margin-left: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    li {
+      color: #333;
+
+	  @media (max-width: 786px) {
+    	font-size: 14px;
+  		}
+    	@media (min-width: 786px) {
+    		font-size: 16px;
+  		}
+
+
+      &.current {
+        font-weight: 600;
+        color: #222;
+      }
+    }
+
+    .separator {
+      margin: 0 0.5rem;
+      color: #999;
+    }
+  }
+}
+
+  @media (min-width: 1024px) {
+    .container-padding {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .container-padding {
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+  }
+  @media (max-width: 768px) {
+	.container-padding {
+	  padding-left: 28px;
+	  padding-right: 28px;
+	}
+  }

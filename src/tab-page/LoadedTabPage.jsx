@@ -14,6 +14,8 @@ import useEnrollmentAlert from '../alerts/enrollment-alert';
 import useLogistrationAlert from '../alerts/logistration-alert';
 
 import ProductTours from '../product-tours/ProductTours';
+import Breadcrumb from './Breadcrumb';
+import './Breadcrumb.scss';
 
 const LoadedTabPage = ({
   activeTabSlug,
@@ -71,7 +73,8 @@ const LoadedTabPage = ({
         streakDiscountCouponEnabled={streakDiscountCouponEnabled}
         verifiedMode={verifiedMode}
       />
-      <main className="d-flex flex-column flex-grow-1 px-6">
+      <Breadcrumb title={title} />
+      <main className="d-flex flex-column flex-grow-1 container-padding">
         <AlertList
           topic="outline"
           className="mx-5 mt-3"
@@ -81,7 +84,7 @@ const LoadedTabPage = ({
           }}
         />
         <CourseTabsNavigation tabs={tabs} className="mb-3" activeTabSlug={activeTabSlug} />
-        <div id="main-content" className="container-xl">
+        <div id="main-content" className="container-xl px-0">
           {children}
         </div>
       </main>
