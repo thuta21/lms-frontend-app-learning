@@ -10,6 +10,7 @@
     padding-left: 90px;
   }
 
+
   ul {
 	margin-left: 1rem;
     list-style: none;
@@ -19,7 +20,8 @@
     padding: 0;
 
     li {
-      color: #333;
+      color: #767A76;
+      padding: 0 10px 0 10px;
 
 	  @media (max-width: 786px) {
     	font-size: 14px;

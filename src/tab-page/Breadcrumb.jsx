@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Breadcrumb = ({ title }) => (
   <nav className="breadcrumb">
     <ul>
-      <li>Home</li>
+      <li className="breadcrumb-li">Home</li>
       <span className="separator">
         <svg
           xmlns="http://www.w3.org/2000/svg"
