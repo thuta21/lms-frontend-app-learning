@@ -19,7 +19,8 @@ const SectionTitle: React.FC<Props> = ({ complete, hideFromTOC, title }) => {
         {complete ? (
           <Icon
             src={CheckCircle}
-            className="float-left mt-1 text-success"
+            className="float-left mt-1"
+            style={{ color: '#4EA24E' }}
             aria-hidden="true"
             svgAttrs={{ 'aria-label': intl.formatMessage(messages.completedSection) }}
             size="sm"

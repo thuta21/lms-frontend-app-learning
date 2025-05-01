@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Card } from '@openedx/paragon';
+// import { Button, Card } from '@openedx/paragon';
+import { Card } from '@openedx/paragon';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 
 import { useSelector } from 'react-redux';
@@ -45,20 +46,34 @@ const StartOrResumeCourseCard = ({ intl }) => {
       <Card.Header
         title={hasVisitedCourse ? intl.formatMessage(messages.resumeBlurb) : intl.formatMessage(messages.startBlurb)}
         actions={(
-          <Button
-            variant="success"
-            block
-            href={resumeCourseUrl}
+          <button
+            type="button"
+            style={{
+              backgroundColor: '#228B22',
+              border: 'none',
+              color: 'white',
+              padding: '10px 20px',
+              borderRadius: '8px',
+            }}
             onClick={() => logResumeCourseClick()}
-            className="mt-2"
           >
             {hasVisitedCourse ? intl.formatMessage(messages.resume) : intl.formatMessage(messages.start)}
-          </Button>
+          </button>
+
+          // <Button
+          //   variant="brand"
+          //   block
+          //   href={resumeCourseUrl}
+          //   onClick={() => logResumeCourseClick()}
+          //   className="mt-2"
+          // >
+          //   {hasVisitedCourse ? intl.formatMessage(messages.resume) : intl.formatMessage(messages.start)}
+          // </Button>
         )}
       />
       {/* Footer is needed for internal vertical spacing to work out. If you can remove, be my guest */}
       {/* eslint-disable-next-line react/jsx-no-useless-fragment */}
-      <Card.Footer className="pt-1"><></></Card.Footer>
+      {/* <Card.Footer className="pt-1"><></></Card.Footer> */}
     </Card>
   );
 };

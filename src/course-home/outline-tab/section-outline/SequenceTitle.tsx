@@ -34,7 +34,8 @@ const SequenceTitle: React.FC<Props> = ({
         {complete ? (
           <Icon
             src={CheckCircle}
-            className="float-left text-success mt-1"
+            className="float-left mt-1"
+            style={{ color: '#4EA24E' }}
             aria-hidden={complete}
             svgAttrs={{ 'aria-label': intl.formatMessage(messages.completedAssignment) }}
             size="sm"

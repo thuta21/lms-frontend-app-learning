@@ -456,13 +456,30 @@ $font-family-lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 56px !important;
 }
 
+.course-outline-tab .pgn__card {
+    .pgn__card-header {
+      display: flex;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      .pgn__card-header-content {
+        margin-top: 0 !important;
+      }
+    }
+
+    .pgn__card-header-actions {
+      margin-top: 0 !important;
+    }
+  }
+
 @include media-breakpoint-down(xs) {
   .course-outline-tab .pgn__card {
     .pgn__card-header {
       display: block;
 
       .pgn__card-header-content {
-        margin-top: 0;
+        margin-top: 0 !important;
       }
     }
 

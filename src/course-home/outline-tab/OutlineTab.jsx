@@ -4,12 +4,12 @@ import { useSelector } from 'react-redux';
 import { sendTrackEvent } from '@edx/frontend-platform/analytics';
 import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
 import { useIntl } from '@edx/frontend-platform/i18n';
-import { Button } from '@openedx/paragon';
+// import { Button } from '@openedx/paragon';
 import { PluginSlot } from '@openedx/frontend-plugin-framework';
 import { AlertList } from '../../generic/user-messages';
 
 import CourseDates from './widgets/CourseDates';
-import CourseHandouts from './widgets/CourseHandouts';
+// import CourseHandouts from './widgets/CourseHandouts';
 import StartOrResumeCourseCard from './widgets/StartOrResumeCourseCard';
 import WeeklyLearningGoalCard from './widgets/WeeklyLearningGoalCard';
 // import CourseTools from './widgets/CourseTools';
@@ -167,9 +167,31 @@ const OutlineTab = () => {
             <>
               <div id="expand-button-row" className="row w-100 m-0 mb-3 justify-content-end">
                 <div className="col-12 col-md-auto p-0">
-                  <Button ref={expandButtonRef} variant="outline-success" block onClick={() => { setExpandAll(!expandAll); }}>
+                  <button
+                    type="button"
+                    style={{
+                      backgroundColor: 'transparent',
+                      border: '1px solid#99CA99',
+                      padding: '10px 20px',
+                      borderRadius: '8px',
+                      color: '#228B22',
+                      fontSize: '16px',
+                      fontWeight: '700',
+                    }}
+                    onClick={() => { setExpandAll(!expandAll); }}
+                  >
                     {expandAll ? intl.formatMessage(messages.collapseAll) : intl.formatMessage(messages.expandAll)}
-                  </Button>
+                  </button>
+
+                  {/*
+                  <Button
+                    ref={expandButtonRef}
+                    variant="outline-success"
+                    block
+                    onClick={() => { setExpandAll(!expandAll); }}
+                  >
+                    {expandAll ? intl.formatMessage(messages.collapseAll) : intl.formatMessage(messages.expandAll)}
+                  </Button> */}
                 </div>
               </div>
               <CourseHomeSectionOutlineSlot
@@ -214,7 +236,7 @@ const OutlineTab = () => {
               />
             </PluginSlot>
             <CourseDates />
-            <CourseHandouts />
+            {/* <CourseHandouts /> */}
           </div>
         )}
       </div>
