@@ -15,6 +15,7 @@ $f-sans-serif: Montserrat, 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-
 $font-family-lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import "variables.scss";
 
 #root {
   display: flex;
@@ -493,6 +494,49 @@ $font-family-lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: $font-family-title
 }
 
+.popover {
+  border: none !important;
+}
+
+.wrapper-course-material[aria-label="Course Material"] {
+    padding: 59px 15px !important;
+}
+
+.btn-icon.btn-icon-primary {
+  color: $app-primary-500 !important;
+}
+
+.btn-icon.btn-icon-primary.active, .btn-icon.btn-icon-primary.hover, .btn-icon.btn-icon-primary:active, .btn-icon.btn-icon-primary:hover {
+  background-color: $app-primary-500 !important;
+  color: white !important;
+}
+
+.donut-chart-text {
+    fill: $app-primary-500 !important;
+}
+
+.course-tabs-navigation+.container-xl>.row>.col-12.col-md-8.p-0 .rounded.raised-card .bg-warning-100 svg {
+  color: $app-primary-500 !important;
+}
+
+.course-tabs-navigation+.container-xl>.row>.col-12.col-md-8.p-0 .rounded.raised-card .bg-warning-100 .h4 {
+  color: $app-primary-500 !important;
+}
+
+#root .grades .pgn__data-table-wrapper #weighted-grade-summary.small {
+  color: $app-primary-500 !important;
+}
+
+div[role=heading].h2+.list-unstyled.m-0.mt-4.pt-2 li:first-child.dates-day.pb-4 .dates-dot.border.border-gray-900 {
+  background-color: $app-primary-500 !important;
+  border: 2px solid $app-primary-500 !important;
+}
+
+div[role=heading].h2+.list-unstyled.m-0.mt-4.pt-2 li:nth-child(2).dates-day.pb-4 .dates-dot.border.bg-warning-300 {
+  background-color: $app-primary-500 !important;
+  border: 2px solid $app-primary-500 !important;
+}
+
 // Import component-specific sass files
 @import "courseware/course/celebration/CelebrationModal.scss";
 @import "courseware/course/sidebar/sidebars/discussions/Discussions.scss";
@@ -514,3 +558,7 @@ $font-family-lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @import "course-tabs/course-tabs-navigation.scss";
 @import "courseware/course/sidebar/common/SidebarBase.scss";
 @import "courseware/course/sidebar/sidebars/course-outline/CourseOutlineTray.scss";
+
+.spinner-border {
+  color: $app-primary-500 !important;
+}
