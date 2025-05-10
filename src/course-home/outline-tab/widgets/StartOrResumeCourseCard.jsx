@@ -46,19 +46,24 @@ const StartOrResumeCourseCard = ({ intl }) => {
       <Card.Header
         title={hasVisitedCourse ? intl.formatMessage(messages.resumeBlurb) : intl.formatMessage(messages.startBlurb)}
         actions={(
-          <button
-            type="button"
+          <a
             style={{
               backgroundColor: '#228B22',
               border: 'none',
               color: 'white',
-              padding: '10px 20px',
+              padding: '15px 20px',
               borderRadius: '8px',
+              textDecoration: 'none',
             }}
-            onClick={() => logResumeCourseClick()}
+            href={resumeCourseUrl}
+            onClick={(e) => {
+              e.preventDefault();
+              logResumeCourseClick();
+              window.location.href = resumeCourseUrl;
+            }}
           >
             {hasVisitedCourse ? intl.formatMessage(messages.resume) : intl.formatMessage(messages.start)}
-          </button>
+          </a>
 
           // <Button
           //   variant="brand"

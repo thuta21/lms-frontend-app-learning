@@ -511,6 +511,10 @@ $font-family-lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: white !important;
 }
 
+.btn-icon.btn-icon-primary:focus {
+  box-shadow: none !important;
+}
+
 .donut-chart-text {
     fill: $app-primary-500 !important;
 }

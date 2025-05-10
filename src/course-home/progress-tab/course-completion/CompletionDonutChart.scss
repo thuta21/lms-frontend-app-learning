@@ -56,7 +56,8 @@
 
 .donut-ring, .donut-segment, .donut-hole {
   &.complete-stroke {
-    stroke: $info-500;
+    // stroke: $info-500;
+    stroke: #228b21 !important;
   }
 
   &.divider-stroke {
