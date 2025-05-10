@@ -7,6 +7,7 @@ import CurrentGradeTooltip from './CurrentGradeTooltip';
 import PassingGradeTooltip from './PassingGradeTooltip';
 
 import messages from '../messages';
+import './GradeBar.scss';
 
 const GradeBar = ({ passingGrade }) => {
   const intl = useIntl();

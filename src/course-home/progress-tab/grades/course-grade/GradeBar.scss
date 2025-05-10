@@ -4,7 +4,7 @@
   }
 
   .grade-bar__base {
-    fill: $light-300;
+    fill:#228B22;
   }
 
   .grade-bar__divider {
@@ -17,11 +17,11 @@
   }
 
   .grade-bar--current-passing {
-    fill: $app-primary-500;
+    fill: #228B22;
   }
 
   .grade-bar--current-non-passing {
-    fill: $accent-b;
+    fill: #228B22;
   }
 }
 
@@ -41,10 +41,10 @@
 }
 
 #passing-grade-tooltip {
-  background: $app-primary-500 !important;
+  background: #228B22 !important;
   color: white !important;
   .arrow::after {
-    border-top-color: $app-primary-500 !important;
+    border-top-color: #228B22 !important;
   }
   .arrow::before {
     border-top-color: #228B22 !important;
@@ -52,7 +52,7 @@
 }
 
 #non-passing-grade-tooltip {
-  background: $app-primary-500 !important;
+  background: #228B22 !important;
   .arrow::after {
     border-top-color: #228B22 !important;
   }

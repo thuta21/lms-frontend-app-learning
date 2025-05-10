@@ -20,9 +20,9 @@ $offset: $dot-radius * 1.5;
   position: absolute;
   border-radius: 50%;
   left: $dot-radius * 0.5; // save room for today's larger size
-  top: $offset;
-  height: $dot-size;
-  width: $dot-size;
+  top: $offset !important;
+  height: $dot-size !important;
+  width: $dot-size !important;
   z-index: 1;
   background-color: #228b21 !important;
 
@@ -39,10 +39,13 @@ $offset: $dot-radius * 1.5;
   position: absolute;
   top: $offset + $dot-size;
   bottom: 0;
-  left: $offset;
+  left: $offset !important;
   z-index: 0;
   border-color: #228b21 !important;
+}
 
+.dates-line {
+  left: $offset !important;
 }
 
 .dates-bg-today {

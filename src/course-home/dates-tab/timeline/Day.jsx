@@ -16,6 +16,7 @@ import { useModel } from '../../../generic/model-store';
 
 import { getBadgeListAndColor } from './badgelist';
 import { isLearnerAssignment } from '../utils';
+import './Day.scss';
 
 const Day = ({
   date,
@@ -44,7 +45,7 @@ const Day = ({
       <div className={classNames(color, 'dates-dot')} />
 
       {/* Bottom Line */}
-      {!last && <div className="dates-line-bottom border-1 border-left border-gray-900 bg-gray-900" />}
+      {!last && <div className="dates-line border-1 border-left border-gray-900 bg-gray-900" />}
 
       {/* Content */}
       <div className="d-inline-block ml-3 pl-2">
