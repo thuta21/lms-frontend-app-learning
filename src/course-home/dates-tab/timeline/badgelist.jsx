@@ -76,7 +76,7 @@ function getBadgeListAndColor(date, intl, item, items) {
       className: 'text-white',
     },
   ];
-  let color = '#228b21 !important'; // first color of any badge
+  let color = null; // first color of any badge
   const badges = (
     <>
       {badgesInfo.map(b => {
@@ -93,7 +93,7 @@ function getBadgeListAndColor(date, intl, item, items) {
         }
 
         if (!color && !isInFuture) {
-          color = '#228b21 !important';
+          color = 'border-gray-500';
         }
         return (
           <Badge key={b.message.id} className={classNames('ml-2', b.bg, b.className)} data-testid="dates-badge">

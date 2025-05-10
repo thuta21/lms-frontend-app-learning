@@ -41,7 +41,7 @@ const Day = ({
       {!first && <div className="dates-line-top border-1 border-left border-gray-900 bg-gray-900" />}
 
       {/* Dot */}
-      <div className="dates-dot border border-gray-900" style={{ backgroundColor: color, borderColor: color }} />
+      <div className={classNames(color, 'dates-dot')} />
 
       {/* Bottom Line */}
       {!last && <div className="dates-line-bottom border-1 border-left border-gray-900 bg-gray-900" />}

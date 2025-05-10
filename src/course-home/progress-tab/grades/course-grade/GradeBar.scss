@@ -53,11 +53,16 @@
 
 #non-passing-grade-tooltip {
   background: $app-primary-500 !important;
-
-  .arrow::before {
-    border-bottom-color: $app-primary-500 !important;
-  }
   .arrow::after {
     border-top-color: #228B22 !important;
   }
+
+  .arrow {
+        &:before {
+            border-top-color: #228B22 !important;
+        }
+        &:after {
+            border-top-color: #228B22 !important;
+        }
+    }
 }

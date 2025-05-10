@@ -24,6 +24,7 @@ $offset: $dot-radius * 1.5;
   height: $dot-size;
   width: $dot-size;
   z-index: 1;
+  background-color: #228b21 !important;
 
   &.dates-bg-today {
     left: 0;
@@ -41,6 +42,7 @@ $offset: $dot-radius * 1.5;
   left: $offset;
   z-index: 0;
   border-color: #228b21 !important;
+
 }
 
 .dates-bg-today {
