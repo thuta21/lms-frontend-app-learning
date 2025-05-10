@@ -40,6 +40,7 @@ $offset: $dot-radius * 1.5;
   bottom: 0;
   left: $offset;
   z-index: 0;
+  border-color: #228b21 !important;
 }
 
 .dates-bg-today {

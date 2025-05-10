@@ -46,9 +46,9 @@ const GradeSummaryTableFooter = () => {
   return (
     <DataTable.TableFooter className={`border-top border-primary ${bgColor}`}>
       <div className="row w-100 m-0">
-        <div id="weighted-grade-summary" className="col-8 p-0 small" style={{ color: '#228b21 !important' }}>
+        <div id="weighted-grade-summary" className="col-8 p-0 small">
           <Stack gap={2} direction="horizontal">
-            {intl.formatMessage(messages.weightedGradeSummary)}
+            <span style={{ color: '#228b21 !important' }}>  {intl.formatMessage(messages.weightedGradeSummary)} </span>
             <OverlayTrigger
               trigger="hover"
               placement="bottom"

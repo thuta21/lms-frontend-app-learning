@@ -33,7 +33,10 @@
   background: #228B22;
   border: none;
   .arrow::after {
-    border-bottom-color: #228B22;
+    border-bottom-color: #228B22 !important;
+  }
+  .arrow::before {
+    border-top-color: #228B22 !important;
   }
 }
 
@@ -42,6 +45,9 @@
   color: white !important;
   .arrow::after {
     border-top-color: $app-primary-500 !important;
+  }
+  .arrow::before {
+    border-top-color: #228B22 !important;
   }
 }
 
@@ -52,6 +58,6 @@
     border-bottom-color: $app-primary-500 !important;
   }
   .arrow::after {
-    border-top-color: $app-primary-500 !important;
+    border-top-color: #228B22 !important;
   }
 }
