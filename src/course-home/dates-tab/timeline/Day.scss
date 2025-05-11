@@ -6,10 +6,10 @@ $offset: $dot-radius * 1.5;
   position: relative;
 }
 
-.dates-line-top {
+.dates-top {
   display: inline-block;
   position: absolute;
-  left: $offset;
+  left: $dot-radius;
   top: 0;
   height: $offset;
   z-index: 0;
@@ -39,9 +39,7 @@ $offset: $dot-radius * 1.5;
   position: absolute;
   top: $offset + $dot-size;
   bottom: 0;
-  left: $offset;
   z-index: 0;
-  border-left: 1px solid #228b21;
 }
 
 .dates-line {
