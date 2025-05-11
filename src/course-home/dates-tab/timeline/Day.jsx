@@ -45,8 +45,7 @@ const Day = ({
       <div className={classNames(color, 'dates-dot')} />
 
       {/* Bottom Line */}
-      {!last && <div className="dates-line border-1 border-left border-gray-900 bg-gray-900" />}
-
+      {!last && <div className="dates-line-bottom border-1 border-left border-gray-900 bg-gray-900" />}
       {/* Content */}
       <div className="d-inline-block ml-3 pl-2">
         <div className="row w-100 m-0 mb-1 align-items-center text-primary-700" data-testid="dates-header">
